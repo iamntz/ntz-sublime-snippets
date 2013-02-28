@@ -1,0 +1,5 @@
+<snippet>
+	<content><![CDATA[<input type="${1:[t]ext/[c]heckbox/[r]adio/[e]mail/[te]l/[s]ubmit/[se]arch/[h]idden}${1/(t$)|(c$)|(r$)|(e$)|(s$)|(te$)|(se$)|(h$)|.*/?1:ext:?2:heckbox:?3:adio:?4:mail:?5:ubmit:?6:l:?7:arch:?8:idden/i}" name="${5:$1}[]"$10>$0]]></content>
+	<tabTrigger>input</tabTrigger>
+	<scope>text.html,source.php</scope>
+</snippet>

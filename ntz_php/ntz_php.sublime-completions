@@ -1,0 +1,26 @@
+{
+	"scope": "source.php",
+	"completions":
+	[
+
+        { "trigger": "foreach|each", "contents": "foreach( (array) \\$${1:variable} as \\$${2:key}${3: => \\$${4:value}} ) {\n${0:# code...}\n}" }
+        ,{ "trigger": "t", "contents": "\\$this${2:->}" }
+        ,{ "trigger": "doc", "contents": "/**" }
+        ,{ "trigger": "pp", "contents": "print_r( $1 );" }
+        ,{ "trigger": "ppd", "contents": "print_r( $1 );die();" }
+        ,{ "trigger": "arr", "contents": "array( $0 )" }
+        ,{ "trigger": "g|gl|glo", "contents": "global ${1:\\$post};$0" }
+
+
+//                                      __      __           __
+//         _      ______     ________  / /___ _/ /____  ____/ /
+//        | | /| / / __ \   / ___/ _ \/ / __ `/ __/ _ \/ __  / 
+//        | |/ |/ / /_/ /  / /  /  __/ / /_/ / /_/  __/ /_/ /  
+//        |__/|__/ .___/  /_/   \___/_/\__,_/\__/\___/\__,_/   
+//              /_/                                            
+    ,{ "trigger": "wpconf", "contents": "\\$ntz_site_url = 'http://${1:domain.com}/';\ndefine( 'WP_SITEURL', \\$ntz_site_url );\ndefine( 'WP_HOME', \\$ntz_site_url );\ndefine( 'WP_CONTENT_URL', \\$ntz_site_url.'/wp-content' );\ndefine( 'WP_PLUGIN_URL', \\$ntz_site_url.'/wp-content/plugins' );"}
+    ,{ "trigger": "wploop", "contents": "if( ${1:\\$${5:custom_loop}->}have_posts() ){\n\twhile( ${1:\\$${5:custom_loop}->}have_posts() ){\n\t\t$1the_post();\n\t\t$0\n\t}\n}else{\n\t\n}\nwp_reset_query();" }
+    ,{ "trigger": "gpm", "contents": "get_post_meta( ${1:\\$post->ID}, '${3:meta_key}', ${5:[t]rue/[f]alse}${5/(t$)|(f$)|.*/?1:rue:?2:alse/i} );$0" }
+    // ,{ "trigger": "loop", "contents": " $0 " }
+  ]
+}
