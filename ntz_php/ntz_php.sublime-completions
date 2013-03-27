@@ -3,7 +3,7 @@
 	"completions":
 	[
 
-        ,{ "trigger": "t", "contents": "\\$this${2:->}" }
+         { "trigger": "t", "contents": "\\$this${2:->}" }
         ,{ "trigger": "doc", "contents": "/**" }
         ,{ "trigger": "pp", "contents": "print_r( $0 );" }
         ,{ "trigger": "ppd", "contents": "print_r( $0 );die();" }
