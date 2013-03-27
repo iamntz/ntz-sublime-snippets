@@ -1,0 +1,8 @@
+{
+	"scope": "source.js",
+	"completions":
+	[
+        { "trigger": "pd", "contents": "preventDefault();" }
+        ,{ "trigger": "sp", "contents": "stopPropagation();" }
+    ]
+}
