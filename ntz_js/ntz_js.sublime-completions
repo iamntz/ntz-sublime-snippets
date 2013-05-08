@@ -5,9 +5,10 @@
         { "trigger": "pd", "contents": "preventDefault();" }
         ,{ "trigger": "sp", "contents": "stopPropagation();" }
         ,{ "trigger": "len", "contents": "length" }
-        ,{ "trigger": "sib", "contents": "siblings($1)$0" }
+        ,{ "trigger": "sib|sbl", "contents": "siblings($1)$0" }
         ,{ "trigger": "adc|addc|addClass", "contents": "addClass($1)$0" }
         ,{ "trigger": "rmc|remc|removeClass", "contents": "removeClass($1)$0" }
         ,{ "trigger": "tgc|togc|toggleClass", "contents": "toggleClass($1${2:, condition})$0" }
+        ,{ "trigger": "hasc|hasClass", "contents": "hasClass($1)$0" }
     ]
 }

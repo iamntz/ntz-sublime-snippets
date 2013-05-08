@@ -1,11 +1,13 @@
 [
 	{ "keys": ["ctrl+enter"], "command": "close_tag" },
+
 	{
 		"keys"   :	["ctrl+shift+enter"], 
 		"command":	"insert_snippet",
 		"args"   :	{ "contents": "<br>" },
 		"context":	[ { "key": "selector", "operator": "equal", "operand": "text.html" } ]
 	},
+
 	{ // wrap tags. the built in wrap tags function works a little awkward.
 		"keys"   :	["alt+ctrl+w"], 
 		"command":	"insert_snippet",
@@ -13,18 +15,6 @@
 	},
 
 
-	//{
-	//	"keys"   :	["ctrl+b"], 
-	//	"command":	"insert_snippet",
-	//	"args"   :	{ "contents": "<strong>${1:$SELECTION}</strong>" },
-	//	"context":	[ { "key": "selector", "operator": "equal", "operand": "text.html" } ]
-	//},
-	{
-		"keys"   :	["ctrl+i"], 
-		"command":	"insert_snippet",
-		"args"   :	{ "contents": "<em>${1:$SELECTION}</em>" },
-		"context":	[ { "key": "selector", "operator": "equal", "operand": "text.html" } ]
-	},
 	{
 		"keys"   :	["alt+shift+a"], 
 		"command":	"insert_snippet",
