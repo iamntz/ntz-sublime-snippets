@@ -1,6 +1,11 @@
 {
-	"completions":
-	[
-    { "trigger": "ret", "contents": "return ${1:[t]rue/[f]alse}${1/(t$)|(f$)|.*/?1:rue:?2:alse/i};$0" }
-  ]
+
+    "scope": "source.js, source.php",
+    "completions":
+    [
+       { "trigger": "ret|retr|retu|return", "contents": "return $0;" }
+      ,{ "trigger": "fal|rf", "contents": "return false;$0" }
+      ,{ "trigger": "tru|rt", "contents": "return true;$0" }
+    ]
+
 }

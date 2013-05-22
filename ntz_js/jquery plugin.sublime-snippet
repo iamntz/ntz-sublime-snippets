@@ -13,23 +13,17 @@ ${20:
   \}
 }
   var ${1:plugin name} = {
-    init: function( el, o ){
-      var \$t = this;
-      \$t.el = \$( el );
+    init: function( el ){
+      var \$this = this;
+      \$this.el = \$( el );
       $0
     } // init
   };
-  \$.fn.${1:plugin name} = function( options ) {
-
-    var settings = \$.extend({
-      ${10:foo: 'bar'}
-    }, options);
-
+  \$.fn.${1:plugin name} = function() {
     return this.each(function(){
       var obj = Object.create( ${1:plugin name} );
-      obj.init( this, settings );
+      obj.init( this );
     });
-  
   };
 
 })( jQuery, document );]]></content>
