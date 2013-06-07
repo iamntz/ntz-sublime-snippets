@@ -96,7 +96,7 @@
     { "trigger": "ls", "contents": "list-style:${1:[n]one/[d]isc/[de]cimal/}${1/(n$)|(d$)|(de$)|.*/?1:one:?2:isc:?3:cimal/i};$0" },
 
     /* box model css3 */
-    { "trigger": "bs", "contents": "-webkit-box-shadow:$1px $2px $3px rgba$0;\nbox-shadow:$1px $2px $3px rgba$0;" },
+    { "trigger": "bs", "contents": "box-shadow:$1px $2px $3px rgba$0;" },
     { "trigger": "rad", "contents": "border-radius:${1:}px;$0" },
 
     /* various & unsorted */

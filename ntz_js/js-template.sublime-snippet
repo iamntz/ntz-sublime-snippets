@@ -2,7 +2,7 @@
   <content><![CDATA[
 <script type="text/template" id="$1">
   $0
-</script><!-- /#$1 template -->
+</script><!-- /#$1 -->
 ]]></content>
   <tabTrigger>tpl</tabTrigger>
   <scope>text.html</scope>

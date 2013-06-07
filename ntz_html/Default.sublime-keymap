@@ -9,7 +9,7 @@
 	},
 
 	{ // wrap tags. the built in wrap tags function works a little awkward.
-		"keys"   :	["alt+ctrl+w"], 
+		"keys"   :	["alt+shift+w"], 
 		"command":	"insert_snippet",
 		"args"   :	{ "contents": "<${1:p}>${0:$SELECTION}</${1/\\s.*//}>" }
 	},
