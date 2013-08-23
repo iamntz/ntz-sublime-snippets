@@ -1,7 +1,0 @@
-<snippet>
-	<content><![CDATA[<form action="$2" method="${3:[p]ost/[g]et}${3/(p$)|(g$)|.*/?1:ost:?2:et/i}"${5: accept-charset="utf-8"}${6: enctype="multipart/form-data"}$7>
-	$0
-</form>]]></content>
-	<tabTrigger>form</tabTrigger>
-	<scope>text.html,source.php</scope>
-</snippet>

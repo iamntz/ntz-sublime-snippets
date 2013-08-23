@@ -4,7 +4,7 @@
 	[
          { "trigger": "pd", "contents": "preventDefault();" }
         ,{ "trigger": "sp", "contents": "stopPropagation();" }
-        ,{ "trigger": "ct", "contents": "currentTarget" }
+        ,{ "trigger": "ct|cur|curt", "contents": "currentTarget" }
         ,{ "trigger": "e|ev", "contents": "event" }
         ,{ "trigger": "len", "contents": "length" }
         ,{ "trigger": "sib|sbl", "contents": "siblings($1)$0" }
@@ -14,5 +14,8 @@
         ,{ "trigger": "rmc|remc", "contents": "removeClass($1)$0" }
         ,{ "trigger": "appt|appendTo", "contents": "appendTo($1)$0" }
         ,{ "trigger": "ppt|prependTo", "contents": "prependTo($1)$0" }
+        ,{ "trigger": "pre", "contents": "prepend($1)$0" }
+        ,{ "trigger": "app", "contents": "append($1)$0" }
+        ,{ "trigger": "pr|pro|proxy", "contents": "\\$.proxy( this.$1, this )$0" }
     ]
 }
